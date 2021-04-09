@@ -23,3 +23,11 @@ When submit().click("button[type='submit']")
 
 6) To clear the anything in textfield, use this code
 Then clear("input[id='email']")
+
+
+7) For dropdown button, use this code
+Given select("select[name='adminTable_length']","20")
+
+8) To match the message after any action, use this code
+Then match text('#eg02DivId') == '16'
+
