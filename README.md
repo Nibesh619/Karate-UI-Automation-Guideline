@@ -31,3 +31,18 @@ Given select("select[name='adminTable_length']","20")
 8) To match the message after any action, use this code
 Then match text('#eg02DivId') == '16'
 
+
+9)  fail test if element does not exist
+ * assert exists('#foo')
+
+10)  click if element actually exists else do nothing
+* optional('#foo').click()
+
+11) Get element without any wait and fail if it does not exist
+* def btn = locate('#foo')
+* btn.click()
+
+12)  To select scroll the page, use this code. 
+* scroll('#myInput')
+
+
