@@ -45,4 +45,18 @@ Then match text('#eg02DivId') == '16'
 12)  To select scroll the page, use this code. 
 * scroll('#myInput')
 
+13) To scroll and click(), use this code. 
+*scroll(‘#myInput’).click()
+I also use this code when I have to scroll the page and there is only text available. So this code scrolls the desired text and clicks the text which does not do anything. So you can scroll pages more easily. 
+
+
+14) To locate exact path of certain element use, this code
+Then assert locate("//span[text()='Report']").present
+
+15)  To upload file, first keep your desired uploading file in the path where the .feature file is present then, use this code.
+When driver.inputFile("input”'] ","FileName")
+
+
+
+
 
