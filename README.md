@@ -65,7 +65,7 @@ Then def flag = false? 'Sample.feature' : 'Sample2.feature'
 Then close()
 
 Here  * def flag = exists("button[id='adminlistbtnhover']") returns either true or false boolean. Then Then def flag = false? 'Sample.feature' : 'Sample2.feature'  checks the returned value.  I have made two sample features which are sample and sample2. Which prints what value to print(I made two sample feature file where one prints positive return value and another prints negative which can be seen on below code) -  So if flag  is false it will print Sample2.feature and if it is true it will print Sample.Feature. 
-------------------------------------------------demo code for Sample.feature and Sample2.feature--------------------------------------------------------------------------------
+demo code for Sample.feature and Sample2.feature-
 @ignore
 Feature: Call scenario from another scenario
 
