@@ -1,6 +1,6 @@
 # Karate-UI-Automation-Guideline
 
-Error that i faced during Karate UI Automation. 
+Solution for error that i faced during Karate UI Automation. 
 
 
 You inspect the css file using the css selector. Css selector can be used to know the XPath of the desired element. To check if the desired XPath is present or not use “Ctrl+F”. Here you can search the desired Xpath location. 
@@ -55,6 +55,26 @@ Then assert locate("//span[text()='Report']").present
 
 15)  To upload file, first keep your desired uploading file in the path where the .feature file is present then, use this code.
 When driver.inputFile("input”'] ","FileName")
+
+16) Condition to check or validate, use these steps 
+
+* def flag = exists("button[id='adminlistbtnhover']")
+Then def flag = false? 'Sample.feature' : 'Sample2.feature'
+* def result = call read(flag)
+* delay(1000)
+Then close()
+
+Here  * def flag = exists("button[id='adminlistbtnhover']") returns either true or false boolean. Then Then def flag = false? 'Sample.feature' : 'Sample2.feature'  checks the returned value.  I have made two sample features which are sample and sample2. Which prints what value to print(I made two sample feature file where one prints positive return value and another prints negative which can be seen on below code) -  So if flag  is false it will print Sample2.feature and if it is true it will print Sample.Feature. 
+------------------------------------------------demo code for Sample.feature and Sample2.feature--------------------------------------------------------------------------------
+@ignore
+Feature: Call scenario from another scenario
+
+Scenario: Result
+Then print 'It was not found'
+
+
+                                                 
+
 
 
 
