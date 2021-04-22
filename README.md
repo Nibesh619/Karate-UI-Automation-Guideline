@@ -69,6 +69,7 @@ demo code for Sample.feature and Sample2.feature-
 
 
 @ignore
+
 Feature: Call scenario from another scenario
 
 Scenario: Result
