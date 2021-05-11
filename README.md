@@ -25,8 +25,24 @@ When submit().click("button[type='submit']")
 Then clear("input[id='email']")
 
 
-7) For dropdown button, use this code
-Given select("select[name='adminTable_length']","20")
+7) For dropdown button, 
+
+use this code to write on the drop down field
+Given input("select[name='adminTable_length']","20")
+
+select by index i.e dropdown garda auney option ko numbering
+Given select('select[name=data1]', 2)
+
+select by displayed text
+Given select('select[name=data1]', '{}Option Two')
+
+select by partial displayed text
+And select('select[name=data1]', '{^}Two')
+
+select by `value`
+Given select('select[name=data1]', 'option2')
+
+
 
 8) To match the message after any action, use this code
 Then match text('#eg02DivId') == '16'
